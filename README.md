@@ -24,6 +24,7 @@ PART 6: Plot ROC Curve
 <img width="882" height="752" alt="image" src="https://github.com/user-attachments/assets/4cd3b61b-5f2b-42f2-b590-19ed3f13be18" />
 
 PART 7: AUC Score (Overall)
+
 <img width="606" height="153" alt="image" src="https://github.com/user-attachments/assets/b104c24d-99b2-4e16-8220-fea7b3de80e2" />
 
 PART 8: Precision, Recall, F1 Visualization
