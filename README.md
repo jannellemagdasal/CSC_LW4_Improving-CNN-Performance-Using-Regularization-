@@ -53,4 +53,38 @@ Mounted Google Drive and loaded the model.
 ![Part 8](https://github.com/user-attachments/assets/1743d928-62b6-472f-94cf-731c700db24d)
 
 
+## Activity 2: Model Interpretability using
+Gradient-weighted Class Activation Mapping
+(Grad-CAM) - Visualizing CNN Decisions Using
+Grad-CAM for Explainable Image Classification
+
+### PART 1: Load the Saved Model
+<img width="862" height="693" alt="image" src="https://github.com/user-attachments/assets/0fafbf4f-5542-478d-8fa2-d8ab8674fe42" />
+
+### PART 2: Load and Preprocess Test Image
+<img width="614" height="181" alt="image" src="https://github.com/user-attachments/assets/92a54552-944b-448a-bc64-9e97c03fa2cd" />
+
+### PART 3: Identify Last Convolutional Layer
+<img width="861" height="379" alt="image" src="https://github.com/user-attachments/assets/07da9733-7bf7-433c-8e18-8a91636f68cf" />
+
+### PART 4: Build Grad-CAM Function
+<img width="425" height="159" alt="image" src="https://github.com/user-attachments/assets/b7d34642-8ee0-4fc7-bb21-a03450d447b1" />
+
+### PART 5: Generate Heatmap
+<img width="508" height="434" alt="image" src="https://github.com/user-attachments/assets/3bcd35e3-0c79-497b-9e22-be8dbdbcab30" />
+
+### PART 6: Superimpose Heatmap on Original Image
+<img width="453" height="453" alt="image" src="https://github.com/user-attachments/assets/616020e2-7931-4863-9ec5-66b69d893eb8" />
+
+### PART 7: Interpret the Results
+Based on my Grad-CAM heatmap and overlay results, I can observe that the activation values range from 0.4 to 1.0, with the brightest yellow regions concentrated in the center of the image — which is exactly where the plant and flower are located. The darker purple and teal regions represent the background edges, indicating low activation in those areas. In the Grad-CAM overlay, the cyan highlights are clearly focused on the flower blooms at the top of the plant, which are the most visually distinctive parts of the subject, while the pink background and the pot received significantly less activation.
+Based on these observations, I can conclude that my model is learning properly. The heatmap shows that my CNN is correctly focusing on the flower and plant region rather than the background, which means it has successfully learned meaningful and relevant visual features to make its classification decision. The highlighted region corresponds to the correct object, not the background, and the heatmap is not scattered — indicating that my model has developed strong feature learning. The high activation specifically on the blooms suggests that my model identified the most class-discriminative features of the plant, confirming that the regularization techniques applied during training helped the model generalize and focus on the right areas of the image.
+
+
+
+
+
+
+
+
 
