@@ -80,6 +80,9 @@ Grad-CAM for Explainable Image Classification
 Based on my Grad-CAM heatmap and overlay results, I can observe that the activation values range from 0.4 to 1.0, with the brightest yellow regions concentrated in the center of the image — which is exactly where the plant and flower are located. The darker purple and teal regions represent the background edges, indicating low activation in those areas. In the Grad-CAM overlay, the cyan highlights are clearly focused on the flower blooms at the top of the plant, which are the most visually distinctive parts of the subject, while the pink background and the pot received significantly less activation.
 Based on these observations, I can conclude that my model is learning properly. The heatmap shows that my CNN is correctly focusing on the flower and plant region rather than the background, which means it has successfully learned meaningful and relevant visual features to make its classification decision. The highlighted region corresponds to the correct object, not the background, and the heatmap is not scattered — indicating that my model has developed strong feature learning. The high activation specifically on the blooms suggests that my model identified the most class-discriminative features of the plant, confirming that the regularization techniques applied during training helped the model generalize and focus on the right areas of the image.
 
+<img width="1239" height="783" alt="image" src="https://github.com/user-attachments/assets/2838e879-2254-45d0-b7ef-96d298806536" />
+
+
 
 
 
