@@ -80,7 +80,13 @@ Grad-CAM for Explainable Image Classification
 Based on my Grad-CAM heatmap and overlay results, I can observe that the activation values range from 0.4 to 1.0, with the brightest yellow regions concentrated in the center of the image — which is exactly where the plant and flower are located. The darker purple and teal regions represent the background edges, indicating low activation in those areas. In the Grad-CAM overlay, the cyan highlights are clearly focused on the flower blooms at the top of the plant, which are the most visually distinctive parts of the subject, while the pink background and the pot received significantly less activation.
 Based on these observations, I can conclude that my model is learning properly. The heatmap shows that my CNN is correctly focusing on the flower and plant region rather than the background, which means it has successfully learned meaningful and relevant visual features to make its classification decision. The highlighted region corresponds to the correct object, not the background, and the heatmap is not scattered — indicating that my model has developed strong feature learning. The high activation specifically on the blooms suggests that my model identified the most class-discriminative features of the plant, confirming that the regularization techniques applied during training helped the model generalize and focus on the right areas of the image.
 
+Activity 3: Model Enhancement and
+Performance Optimization | Improving CNN
+Performance Using Regularization, Fine-Tuning, and
+Advanced Evaluation
 
+PART 1: Review Results from Activity 4
+PART 2: Apply Model Enhancements
 Enhancement 1-4codes were directly pasted before enhancement 5
 
 Enhancement 5: Train Improved Model
@@ -89,11 +95,35 @@ Enhancement 5: Train Improved Model
 
 <img width="1239" height="783" alt="image" src="https://github.com/user-attachments/assets/2838e879-2254-45d0-b7ef-96d298806536" />
 
+
+PART 3: Re-evaluate the Improved Model
 classification report
 <img width="855" height="628" alt="image" src="https://github.com/user-attachments/assets/305c91b0-0840-4cf8-a03e-172958316539" />
 
 confusion matrix
 <img width="868" height="755" alt="image" src="https://github.com/user-attachments/assets/6cb23bf1-4c84-47fd-a598-0ae7dcf5e3e5" />
+
+ROC Curve
+<img width="805" height="653" alt="image" src="https://github.com/user-attachments/assets/0713ab84-1add-40a3-952c-d7a6b632bd9d" />
+
+auc score
+<img width="844" height="142" alt="image" src="https://github.com/user-attachments/assets/8ff37c08-e555-4e11-80bc-90988e528630" />
+
+precision, recall, f1-score
+<img width="1288" height="604" alt="image" src="https://github.com/user-attachments/assets/f6dd5590-5ad7-4aaa-bf76-dcb0bc8df068" />
+
+PART 4: Compare Results (Before vs After)
+
+
+
+PART 5: Visualization of Improvement
+<img width="824" height="379" alt="image" src="https://github.com/user-attachments/assets/21f1fa0f-0f2e-4396-8c1a-7081596b959a" />
+
+
+
+
+
+
 
 
 
