@@ -80,7 +80,22 @@ Grad-CAM for Explainable Image Classification
 Based on my Grad-CAM heatmap and overlay results, I can observe that the activation values range from 0.4 to 1.0, with the brightest yellow regions concentrated in the center of the image — which is exactly where the plant and flower are located. The darker purple and teal regions represent the background edges, indicating low activation in those areas. In the Grad-CAM overlay, the cyan highlights are clearly focused on the flower blooms at the top of the plant, which are the most visually distinctive parts of the subject, while the pink background and the pot received significantly less activation.
 Based on these observations, I can conclude that my model is learning properly. The heatmap shows that my CNN is correctly focusing on the flower and plant region rather than the background, which means it has successfully learned meaningful and relevant visual features to make its classification decision. The highlighted region corresponds to the correct object, not the background, and the heatmap is not scattered — indicating that my model has developed strong feature learning. The high activation specifically on the blooms suggests that my model identified the most class-discriminative features of the plant, confirming that the regularization techniques applied during training helped the model generalize and focus on the right areas of the image.
 
+
+Enhancement 1-4codes were directly pasted before enhancement 5
+
+Enhancement 5: Train Improved Model
+
+<img width="1803" height="248" alt="image" src="https://github.com/user-attachments/assets/c84a3b93-9e16-42e9-a6a8-af1f6b58f8a4" />
+
 <img width="1239" height="783" alt="image" src="https://github.com/user-attachments/assets/2838e879-2254-45d0-b7ef-96d298806536" />
+
+classification report
+<img width="855" height="628" alt="image" src="https://github.com/user-attachments/assets/305c91b0-0840-4cf8-a03e-172958316539" />
+
+confusion matrix
+<img width="868" height="755" alt="image" src="https://github.com/user-attachments/assets/6cb23bf1-4c84-47fd-a598-0ae7dcf5e3e5" />
+
+
 
 
 
