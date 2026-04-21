@@ -113,13 +113,61 @@ precision, recall, f1-score
 <img width="1288" height="604" alt="image" src="https://github.com/user-attachments/assets/f6dd5590-5ad7-4aaa-bf76-dcb0bc8df068" />
 
 PART 4: Compare Results (Before vs After)
-
+<img width="622" height="602" alt="image" src="https://github.com/user-attachments/assets/73fc24c7-cd3c-4708-94be-cd6e9c29553e" />
 
 
 PART 5: Visualization of Improvement
 <img width="824" height="379" alt="image" src="https://github.com/user-attachments/assets/21f1fa0f-0f2e-4396-8c1a-7081596b959a" />
 
+A. Model Evaluation Analysis
 
+1. Weakest-performing classes:
+Classes like “Aloe” and “Hottentot” had lower F1-scores and more off-diagonal values in the confusion matrix, indicating poor performance.
+
+2. Precision, Recall, F1-score variability:
+These metrics varied by class, with some classes (e.g., “Aloe”, “Hottentot”) scoring significantly lower, reflecting model struggles in distinguishing them.
+
+3. Low recall meaning:
+Low recall indicates the model missed many true samples of that class (high false negatives).
+
+4. AUC vs. accuracy:
+AUC evaluates how well the model separates classes overall, while accuracy solely measures the proportion of correct predictions.
+
+B. Model Improvement
+
+5. Effect of data augmentation:
+Data augmentation improved validation accuracy by increasing data diversity, reducing overfitting.
+
+6. Importance of Batch Normalization:
+Batch Normalization stabilizes and accelerates training by normalizing layer inputs.
+
+7. Role of Dropout:
+Dropout reduces overfitting by randomly deactivating neurons during training, improving generalization.
+
+8. Early Stopping’s benefit:
+Early Stopping prevented overfitting by halting training when validation performance stopped improving.
+
+C. Performance Comparison
+
+9. Observed improvements:
+Modifications led to higher AUC, precision, recall, and F1-score across most classes.
+
+10. Most impactful enhancement:
+Data augmentation contributed most by exposing the model to more varied examples, thus improving generalization.
+
+11. Training/validation accuracy gap:
+The gap decreased after enhancements, indicating improved generalization and reduced overfitting.
+
+D. Explainability (Grad-CAM Integration)
+
+12. Grad-CAM’s contribution:
+Grad-CAM visualizations showed which image regions influenced predictions, aiding interpretability.
+
+13. Focus on relevant regions (improved model):
+The improved model’s Grad-CAM maps concentrated more on object features, showing more relevant attention.
+
+14. Importance of explainability:
+Explainability builds trust, facilitates debugging, and ensures reliable, ethical deployment in real-world AI applications.
 
 
 
